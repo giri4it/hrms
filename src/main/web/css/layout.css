@@ -1,0 +1,15 @@
+.menu-container{
+    width: 20%;
+    height: 100%;
+    background: url("../themes/pepper-grinder/images/ui-bg_fine-grain_10_eceadf_60x60.png");
+    display: inline;
+    float: left;
+}
+
+.main-content{
+    width: 78%;
+    background: url("../themes/pepper-grinder/images/ui-bg_fine-grain_15_eceadf_60x60.png");
+    display: inline-block;
+    height: 100%;
+    padding-left: 10px;
+}

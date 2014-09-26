@@ -1,0 +1,30 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : hrms : hrms-1.0.war (exploded)">
+    <output-path>$PROJECT_DIR$/out/artifacts/hrms/hrms-1.0</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="hrms/web/Web Gradle : hrms-1.0.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="hrms" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: spring-core-3.2.3.RELEASE" />
+          <element id="library" level="project" name="Gradle: spring-webmvc-3.2.3.RELEASE" />
+          <element id="library" level="project" name="Gradle: slf4j-api-1.7.5" />
+          <element id="library" level="project" name="Gradle: commons-logging-1.1.1" />
+          <element id="library" level="project" name="Gradle: spring-beans-3.2.3.RELEASE" />
+          <element id="library" level="project" name="Gradle: spring-expression-3.2.3.RELEASE" />
+          <element id="library" level="project" name="Gradle: aopalliance-1.0" />
+          <element id="library" level="project" name="Gradle: spring-aop-3.2.3.RELEASE" />
+          <element id="library" level="project" name="Gradle: spring-context-3.2.3.RELEASE" />
+          <element id="library" level="project" name="Gradle: spring-web-3.2.3.RELEASE" />
+          <element id="library" level="project" name="Gradle: slf4j-log4j12-1.7.5" />
+          <element id="library" level="project" name="Gradle: log4j-1.2.17" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/hrms/hrms-1.0/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

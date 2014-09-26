@@ -1,0 +1,86 @@
+/* -----------------------------------------------------------------------
+
+   BlueTrip CSS Framework
+   
+   Mike Crittenden
+   mike@capsizedesigns.com
+   Copyright 2008 Mike Crittenden
+   
+   License - MIT or GPL (whichever suits you better)
+
+----------------------------------------------------------------------- */
+
+/* MEYER RESET v1.0*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;vertical-align:baseline;background:transparent}body{line-height:1.2}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+/* Override themeroller font */
+html, html .ui-widget, html .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family: Lucida Sans Unicode, Arial, sans-serif;}
+
+/* container height setting */
+html,body { height:100%;  }
+
+
+/* BASIC TYPOGRAPHY */
+strong, th, thead td, h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+cite, em, dfn { font-style: italic; }
+code, kbd, samp, pre, tt, var, input[type='text'], input[type='password'], textarea, select { font-size: 95%; }
+del { text-decoration: line-through; color: #666; }
+ins, dfn { border-bottom: 1px solid #ccc; }
+small, sup, sub { font-size: 85%; }
+
+a abbr, a acronym { border: none; }
+abbr[title], acronym[title], dfn[title] { cursor: help; border-bottom: 1px solid #ccc; }
+sup { vertical-align: super; }
+sub { vertical-align: sub; }
+
+/* FORMS */
+
+fieldset { padding:0.5em; margin: 0 0 0.5em 0; border: 1px solid #ccc; }
+legend { font-weight: bold; }
+textarea, input[type='text'], input[type='password'], select { border: 1px solid #ccc; display:inline-block }
+textarea:hover, input[type='text']:hover, input[type='password']:hover, select:hover { border-color: #aaa; }
+textarea:focus, input[type='text']:focus, input[type='password']:focus, input[type='radio']:focus, input[type='checkbox']:focus, input[type='submit']:focus, input[type='button']:focus, select:focus, a:focus, button:focus { border-color: #888; outline: 1px dotted #000; }
+.dataTable th:focus { outline: 1px dotted #000; }
+button::-moz-focus-inner { border:0; }
+input, select { cursor: pointer; }
+input[type='text'],input[type='password'] { cursor: text; }
+
+/* MARGINS & PADDINGS */
+
+blockquote *:first-child { margin: .8em 0; }
+hr, p, ul, ol, dl, pre, blockquote, address, table, form { margin-bottom: 0.5em; }
+/* NOTE: Calulate header margins: TOP: 1.6em/size, BOTTOM: 1.6em/size/2 */
+h1 { margin: 1em 0 .5em;  }
+h2 { margin: .535em 0 .535em; }
+h3 { margin: .57em 0 .57em; }
+h4 { margin: .615em 0 .615em; }
+h5 { margin: .67em 0 .67em; }
+h6 { margin: .8em 0 .8em; }
+th, td { padding: 0.3em; !important }
+caption { padding-bottom: .8em;font-weight:bold } /* padding instead of margin for IE */
+blockquote { padding: 0 1em; margin: 1.6em 0; }
+/*fieldset { padding: 0 1em 1em 1em; margin: 1.6em 0; }*/ /* padding-top is margin-top for fieldsets in Opera */
+legend { padding-left: .8em; padding-right: .8em; }
+/*legend+* { margin-top: 1em; }  compensates for the opera margin bug */
+textarea, input { padding: .3em .4em .15em .4em; }
+select { padding: .1em .2em 0 .2em; }
+option { padding: 0 .4em; }
+dt { margin-top: .8em; margin-bottom: .4em; }
+ul { margin-left: 1.5em; }
+ol { margin-left: 2.35em; }
+ol ol, ul ol { margin-left: 2.5em; }
+form div { margin-bottom: .2em; }
+
+/*---------STYLES FOR BUTTONS----------*/
+
+a.button,button { display: inline-block; float: left; margin: 0 0.583em 0.667em 0; padding: 5px 10px 5px 7px; /* Links */
+    border: 1px solid #dedede; border-top: 1px solid #eee; border-left: 1px solid #eee; background-color: #f5f5f5;
+    line-height: 130%;
+    text-decoration: none; font-weight: bold; color: #565656; cursor: pointer; }
+
+/* Standard Buttons */
+a.button:active,button:active { background-color: #6299c5; border: 1px solid #6299c5; color: #fff; }
+
+/*classes added as part of jsp sweep */
+
+.inline_elements{display:inline}
