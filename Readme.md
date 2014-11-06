@@ -1,4 +1,5 @@
-This is a project built using Backbone and Marionette.
+hrms
+====
 
-To execute the project use gradle tomcatRunWar
-
+Gradle is the buld tool
+use the command : gradle tomcatRunWar
