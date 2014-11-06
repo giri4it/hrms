@@ -1,7 +1,7 @@
 <div>
-    Login : <input type="text" name="login" />
-    Password : <input type="password" />
-    Submit: <div> <input type=""" />
+    {{userName}} : <input type="text" name="login" />
+    {{password}} : <input type="password" />
+    {{submit}}: <div> <input type="submit" />
 
     </div>
 </div>

@@ -8,18 +8,19 @@
           <element id="module-output" name="hrms" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Gradle: spring-core-3.2.3.RELEASE" />
-          <element id="library" level="project" name="Gradle: spring-webmvc-3.2.3.RELEASE" />
           <element id="library" level="project" name="Gradle: slf4j-api-1.7.5" />
-          <element id="library" level="project" name="Gradle: commons-logging-1.1.1" />
-          <element id="library" level="project" name="Gradle: spring-beans-3.2.3.RELEASE" />
-          <element id="library" level="project" name="Gradle: spring-expression-3.2.3.RELEASE" />
           <element id="library" level="project" name="Gradle: aopalliance-1.0" />
-          <element id="library" level="project" name="Gradle: spring-aop-3.2.3.RELEASE" />
-          <element id="library" level="project" name="Gradle: spring-context-3.2.3.RELEASE" />
-          <element id="library" level="project" name="Gradle: spring-web-3.2.3.RELEASE" />
           <element id="library" level="project" name="Gradle: slf4j-log4j12-1.7.5" />
           <element id="library" level="project" name="Gradle: log4j-1.2.17" />
+          <element id="library" level="project" name="Gradle: spring-core-4.1.1.RELEASE" />
+          <element id="library" level="project" name="Gradle: spring-webmvc-4.1.1.RELEASE" />
+          <element id="library" level="project" name="Gradle: commons-logging-1.1.3" />
+          <element id="library" level="project" name="Gradle: spring-beans-4.1.1.RELEASE" />
+          <element id="library" level="project" name="Gradle: spring-expression-4.1.1.RELEASE" />
+          <element id="library" level="project" name="Gradle: spring-aop-4.1.1.RELEASE" />
+          <element id="library" level="project" name="Gradle: spring-context-4.1.1.RELEASE" />
+          <element id="library" level="project" name="Gradle: spring-web-4.1.1.RELEASE" />
+          <element id="library" level="project" name="Gradle: aspectjtools-1.6.2" />
         </element>
       </element>
       <element id="directory" name="META-INF">

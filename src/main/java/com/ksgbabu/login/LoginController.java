@@ -1,7 +1,8 @@
-package main.java.com.ksgbabu.login;
+package com.ksgbabu.login;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.WebRequest;
 
 import java.util.logging.Level;
@@ -10,7 +11,8 @@ import java.util.logging.Logger;
 /**
  * Created by gireesh.babu on 24/05/14.
  */
-@Controller
+
+@RestController
 @RequestMapping("/login")
 public class LoginController {
 
