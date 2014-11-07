@@ -9,9 +9,10 @@ define(['../app',
 
         showLogin: function () {
             console.log("show Login called");
-            require(['login/loginview'], function (LoginView) {
+            require(['login/loginview','login/loginmodel'], function (LoginView, LoginModel) {
 
-                var view = new LoginView();
+                var loginModel = new LoginModel();
+                var view = new LoginView(loginModel);
                 AppManager.loginRegion.show(view);
                 view.showLogin();
             });
