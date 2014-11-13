@@ -13,7 +13,8 @@ require.config({
             'backbone.wreqr':'backbone.wreqr',
             'backbone.babysitter': 'backbone.babysitter',
             jqueryui:'jquery-ui-1.10.2.custom',
-            'backbone.radio':'backbone.radio'
+            'backbone.radio':'backbone.radio',
+            q:'q'
         }, waitSeconds:0,
         shim: {
             jquery: {

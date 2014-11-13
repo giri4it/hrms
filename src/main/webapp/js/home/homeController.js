@@ -3,22 +3,43 @@
  */
 
 define(['../app',
-    'marionette'], function (AppManager, Marionette) {
+    'marionette','servicebus'], function (AppManager, Marionette, ServiceBus) {
+
+    var beforeLoginHomeView ={};
 
     var HomeController = Marionette.Controller.extend( {
+
         showHome: function () {
             require(['home/homeView'], function (HomeView) {
 
-                var view = new HomeView();
-                AppManager.mainRegion.show(view);
+                var beforeLoginHomeView = new HomeView();
+                AppManager.mainRegion.show(beforeLoginHomeView);
 
-                require(['servicebus','common/menucontroller','common/footercontroller'],function(ServiceBus){
+                require(['common/menucontroller','common/footercontroller'],function(){
                     ServiceBus.trigger('menu:show');
                     ServiceBus.trigger('footer:show');
-                })
+                });
+
+                ServiceBus.on('show:welcome', function(){
+                    console.log('show:welcome received');
+
+                    console.log('home view closed');
+                    require(['home/welcomehomeview'],function(WelcomeHomeView){
+                        var welcomeHomeView = new WelcomeHomeView();
+                        AppManager.mainRegion.show(welcomeHomeView);
+                    });
+                    beforeLoginHomeView.close();
+
+                    console.log('welcome view loaded');
+
+                });
             });
+        },
+        showWelcomeHome: function(){
+
         }
     });
+
 
     return HomeController;
 });

@@ -3,7 +3,7 @@
  */
 
 define(['../app',
-    'marionette'], function (AppManager, Marionette) {
+    'marionette','servicebus'], function (AppManager, Marionette, ServiceBus) {
 
     var LoginController = Marionette.Controller.extend( {
 
@@ -15,8 +15,14 @@ define(['../app',
                 var view = new LoginView(loginModel);
                 AppManager.loginRegion.show(view);
                 view.showLogin();
+                view.once('loginsuccess',  function(){
+                    console.log('hide called');
+                    AppManager.loginRegion.close();
+                    ServiceBus.trigger('show:welcome');
+                });
             });
         }
+
     });
 
     return LoginController;

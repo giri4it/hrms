@@ -1,8 +1,8 @@
 <div>
 
     <label>{{userName}}</label>
-      <input type="text" name="userName" id="userName" /> <br />
+      <input type="text" name="userName" id="userName" class="form-control" /> <br />
     <label>{{password}}</label>
-      <input type="password" id="password" /> <br />
-    <input type="submit" value="{{submit}}" id="submit" />
+      <input type="password" id="password" class="form-control"/> <br />
+    <input type="submit" value="{{submit}}" id="submit" class="btn btn-sm" />
 </div>

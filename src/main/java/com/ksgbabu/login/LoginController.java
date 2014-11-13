@@ -22,6 +22,6 @@ public class LoginController {
     public String authenticate(WebRequest request){
         String userName = request.getParameter("userName");
         logger.log(Level.INFO,"user name - " + userName);
-        return "loginSuccess";
+        return "{\"loginStatus\":true}";
     }
 }

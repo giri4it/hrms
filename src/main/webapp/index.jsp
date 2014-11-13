@@ -12,20 +12,21 @@
     <title></title>
     <meta charset="utf-8">
     <link rel="stylesheet" href='<c:out value="${pageContext.servletContext.contextPath}" />/css/theme.css' type="text/css" media="screen" />
-
+    <link rel="stylesheet" href='<c:out value="${pageContext.servletContext.contextPath}" />/css/bootstrap.css' type="text/css" media="screen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<body class="container-fluid">
 <div id="container" class="ui-widget">
-    <div id="titile" class="ui-widget-header">
+    <div id="titile" class="ui-widget-header page-header">
         Human Resources Management Portal
     </div>
-    <div id="menu-region" class="menu-region">
+    <div id="menu-region" class="menu-region navbar navbar-left ">
 
     </div>
-    <div id="main-region" class="main-region">
+    <div id="main-region" class="main-region center-block" style="padding-left:  150px;">
         content of the home page
     </div>
-    <div class="login-region" id="login-region">
+    <div class="login-region navbar-right" id="login-region">
         content of the Login Area
     </div>
     <div class="footer"></div>
